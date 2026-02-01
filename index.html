@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Infopath Solutions - Premier IT recruitment, staffing, consulting, and training services. Your trusted partner for IT talent acquisition and professional development.">
+    <meta name="keywords"
+        content="IT staffing, IT recruitment, IT consulting, tech training, contract staffing, full-time placement">
+    <title>Infopath Solutions - IT Recruitment, Staffing & Training Excellence</title>
+
+    <!-- Google Fonts -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">`r`n
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">`r`n
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1F2933',
+                        secondary: '#10B981',
+                        accent: '#F59E0B',
+                        bglight: '#F9FAFB',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="font-sans text-gray-800 bg-white">
+
+    <!-- Header / Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-white transition-shadow duration-300">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/images/logo-color.png" alt="Infopath Solutions" class="h-12 w-auto">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex lg:items-center lg:space-x-8">
+                    <a href="index.html"
+                        class="text-primary font-medium hover:text-secondary transition-colors duration-200">Home</a>
+                    <a href="pages/about.html"
+                        class="text-gray-700 font-medium hover:text-secondary transition-colors duration-200">About
+                        Us</a>
+
+                    <!-- Services Dropdown -->
+                    <div class="relative group">
+                        <button data-dropdown-toggle="services-dropdown"
+                            class="flex items-center text-gray-700 font-medium hover:text-secondary transition-colors duration-200">
+                            Services
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="services-dropdown"
+                            class="hidden absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl py-2 border border-gray-100">
+                            <a href="pages/services-staffing.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-secondary hover:text-white transition-colors duration-200">IT
+                                Staffing</a>
+                            <a href="pages/services-consulting.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-secondary hover:text-white transition-colors duration-200">IT
+                                Consulting</a>
+
+
+                        </div>
+                    </div>
+
+                    <a href="pages/clients.html"
+                        class="text-gray-700 font-medium hover:text-secondary transition-colors duration-200">Clients</a>
+
+
+                    <!-- Training Dropdown -->
+                    <div class="relative group">
+                        <button data-dropdown-toggle="training-dropdown"
+                            class="flex items-center text-gray-700 font-medium hover:text-secondary transition-colors duration-200">
+                            Training
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="training-dropdown"
+                            class="hidden absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl py-2 border border-gray-100">
+                            <a href="pages/training.html#fullstack"
+                                class="block px-4 py-2 text-gray-700 hover:bg-secondary hover:text-white transition-colors duration-200">Full
+                                Stack Development</a>
+
+                            <a href="pages/training.html#cloud"
+                                class="block px-4 py-2 text-gray-700 hover:bg-secondary hover:text-white transition-colors duration-200">Cloud
+                                Computing</a>
+                            <a href="pages/training.html#devops"
+                                class="block px-4 py-2 text-gray-700 hover:bg-secondary hover:text-white transition-colors duration-200">DevOps</a>
+                            <a href="pages/training.html#datascience"
+                                class="block px-4 py-2 text-gray-700 hover:bg-secondary hover:text-white transition-colors duration-200">Data
+                                Science</a>
+                            <a href="pages/training.html#microsoft"
+                                class="block px-4 py-2 text-gray-700 hover:bg-secondary hover:text-white transition-colors duration-200">Microsoft
+                                Technologies</a>
+                            <a href="pages/training.html#cybersecurity"
+                                class="block px-4 py-2 text-gray-700 hover:bg-secondary hover:text-white transition-colors duration-200">Cybersecurity</a>
+                        </div>
+                    </div>
+
+                    <a href="pages/careers.html"
+                        class="text-gray-700 font-medium hover:text-secondary transition-colors duration-200">Careers</a>
+                    <a href="pages/contact.html"
+                        class="bg-secondary text-white px-6 py-2 rounded-lg font-medium hover:bg-emerald-600 transition-all duration-200 shadow-md hover:shadow-lg">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-secondary focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-white lg:hidden">
+        <div class="flex items-center justify-between p-4 border-b">
+            <img src="assets/images/logo-color.png" alt="Infopath Solutions" class="h-10 w-auto">
+            <button id="mobile-menu-close" class="text-gray-700 hover:text-secondary">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <nav class="p-4 overflow-y-auto h-full">
+            <a href="index.html" class="block py-3 text-primary font-medium border-b">Home</a>
+            <a href="pages/about.html" class="block py-3 text-gray-700 font-medium border-b">About Us</a>
+
+            <!-- Mobile Services Dropdown -->
+            <div class="border-b">
+                <button data-mobile-dropdown="mobile-services"
+                    class="flex items-center justify-between w-full py-3 text-gray-700 font-medium">
+                    Services
+                    <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-services" class="hidden pl-4 pb-2">
+                    <a href="pages/services-staffing.html" class="block py-2 text-gray-600">IT Staffing</a>
+                    <a href="pages/services-consulting.html" class="block py-2 text-gray-600">IT Consulting</a>
+
+
+                </div>
+            </div>
+
+            <a href="pages/clients.html" class="block py-3 text-gray-700 font-medium border-b">Clients</a>
+
+
+            <!-- Mobile Training Dropdown -->
+            <div class="border-b">
+                <button data-mobile-dropdown="mobile-training"
+                    class="flex items-center justify-between w-full py-3 text-gray-700 font-medium">
+                    Training
+                    <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="mobile-training" class="hidden pl-4 pb-2">
+                    <a href="pages/training.html#fullstack" class="block py-2 text-gray-600">Full Stack Development</a>
+                    <a href="pages/training.html#cloud" class="block py-2 text-gray-600">Cloud Computing</a>
+                    <a href="pages/training.html#devops" class="block py-2 text-gray-600">DevOps</a>
+                    <a href="pages/training.html#datascience" class="block py-2 text-gray-600">Data Science</a>
+                    <a href="pages/training.html#microsoft" class="block py-2 text-gray-600">Microsoft Technologies</a>
+                    <a href="pages/training.html#cybersecurity" class="block py-2 text-gray-600">Cybersecurity</a>
+                </div>
+            </div>
+
+            <a href="pages/careers.html" class="block py-3 text-gray-700 font-medium border-b">Careers</a>
+            <a href="pages/contact.html" class="block py-3 text-secondary font-medium">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 overflow-hidden bg-cover bg-center"
+        style="background-image: url('assets/images/hero-bg.png');">
+        <!-- Dark overlay for better text readability -->
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/90 via-gray-800/90 to-primary/90"></div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6" data-aos="fade-up">
+                    Your IT Talent Partner for <span class="text-secondary">Success</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                    Connecting exceptional IT professionals with leading organizations. Empowering careers through
+                    world-class training and strategic staffing solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="200">
+                    <a href="pages/contact.html"
+                        class="bg-secondary text-white px-8 py-4 rounded-lg font-semibold hover:bg-emerald-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Get Started
+                    </a>
+                    <a href="pages/about.html"
+                        class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary mb-6" data-aos="fade-up">
+                    Welcome to Infopath Solutions
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                    At Infopath Solutions, finding and developing IT talent is our passion. We provide comprehensive
+                    staffing, consulting, and training services that drive business success. Our team of experts
+                    delivers the right resources with the experience and skills you require, tailored to your unique
+                    needs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-20 bg-bglight">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary mb-4" data-aos="fade-up">
+                    Our Services
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Comprehensive IT solutions designed to meet your business needs
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-secondary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-primary mb-3">IT Staffing</h3>
+                    <p class="text-gray-600 mb-4">Contract and full-time staffing solutions to build your perfect team
+                        with top IT talent.</p>
+                    <a href="pages/services-staffing.html"
+                        class="text-secondary font-semibold hover:text-emerald-600 inline-flex items-center">
+                        Learn More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-primary mb-3">IT Consulting</h3>
+                    <p class="text-gray-600 mb-4">Strategic technology consulting to drive innovation and optimize your
+                        IT infrastructure.</p>
+                    <a href="pages/services-consulting.html"
+                        class="text-secondary font-semibold hover:text-emerald-600 inline-flex items-center">
+                        Learn More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-secondary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-primary mb-3">Contract to Hire</h3>
+                    <p class="text-gray-600 mb-4">Evaluate talent before commitment with our flexible contract-to-hire
+                        solutions.</p>
+                    <a href="pages/services-contract-to-hire.html"
+                        class="text-secondary font-semibold hover:text-emerald-600 inline-flex items-center">
+                        Learn More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-primary mb-3">IT Training</h3>
+                    <p class="text-gray-600 mb-4">World-class training programs in Full Stack, Cloud, DevOps, Data
+                        Science, and more.</p>
+                    <a href="pages/training.html"
+                        class="text-secondary font-semibold hover:text-emerald-600 inline-flex items-center">
+                        Learn More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary mb-4" data-aos="fade-up">
+                    Why Choose Infopath Solutions?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    We deliver excellence through expertise, dedication, and proven results
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-br from-secondary to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-primary mb-3">Rapid Deployment</h3>
+                    <p class="text-gray-600">Quick turnaround times to get the right talent in place when you need them
+                        most.</p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-br from-accent to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-primary mb-3">Rigorous Screening</h3>
+                    <p class="text-gray-600">Three-level screening process ensures only the best candidates reach you.
+                    </p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-br from-secondary to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-primary mb-3">Cost-Effective</h3>
+                    <p class="text-gray-600">Competitive pricing with exceptional value and high acceptance ratios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos Slider -->
+    <section class="py-16 bg-bglight">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary mb-4" data-aos="fade-up">
+                    Trusted by Leading Organizations
+                </h2>
+                <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                    We're proud to partner with industry leaders
+                </p>
+            </div>
+
+            <div class="swiper client-swiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper items-center">
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-lg p-8 shadow-md flex items-center justify-center h-32">
+                            <span class="text-2xl font-bold text-gray-400">EDIMS</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-lg p-8 shadow-md flex items-center justify-center h-32">
+                            <span class="text-2xl font-bold text-gray-400">WEST</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-lg p-8 shadow-md flex items-center justify-center h-32">
+                            <span class="text-xl font-bold text-gray-400">Principal Financial</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-lg p-8 shadow-md flex items-center justify-center h-32">
+                            <span class="text-xl font-bold text-gray-400">Alliance Data</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-lg p-8 shadow-md flex items-center justify-center h-32">
+                            <span class="text-2xl font-bold text-gray-400">Healthfirst</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-secondary to-emerald-600">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-6" data-aos="fade-up">
+                    Ready to Transform Your IT Workforce?
+                </h2>
+                <p class="text-xl text-white text-opacity-90 mb-8" data-aos="fade-up" data-aos-delay="100">
+                    Let's discuss how Infopath Solutions can help you achieve your business goals with the right talent
+                    and training.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="200">
+                    <a href="pages/contact.html"
+                        class="bg-white text-secondary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Contact Us Today
+                    </a>
+                    <a href="pages/services-staffing.html"
+                        class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-secondary transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Explore Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-gray-300 pt-16 pb-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <img src="assets/images/logo-white.png" alt="Infopath Solutions" class="h-12 w-auto mb-4">
+                    <p class="text-gray-400 mb-4">
+                        Your trusted partner for IT recruitment, staffing, consulting, and training excellence.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-heading text-white text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-secondary transition-colors">Home</a></li>
+                        <li><a href="pages/about.html" class="hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="pages/clients.html" class="hover:text-secondary transition-colors">Clients</a></li>
+                        <li></li>
+                        <li><a href="pages/careers.html" class="hover:text-secondary transition-colors">Careers</a></li>
+                        <li><a href="pages/contact.html" class="hover:text-secondary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-heading text-white text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="pages/services-staffing.html" class="hover:text-secondary transition-colors">IT
+                                Staffing</a></li>
+                        <li><a href="pages/services-consulting.html" class="hover:text-secondary transition-colors">IT
+                                Consulting</a></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <!-- Training Programs -->
+                <div>
+                    <h3 class="font-heading text-white text-lg font-semibold mb-4">Training Programs</h3>
+                    <ul class="space-y-2">
+                        <li><a href="pages/training.html#fullstack" class="hover:text-secondary transition-colors">Full
+                                Stack Development</a></li>
+                        <li><a href="pages/training.html#cloud" class="hover:text-secondary transition-colors">Cloud
+                                Computing</a></li>
+                        <li><a href="pages/training.html#devops"
+                                class="hover:text-secondary transition-colors">DevOps</a></li>
+                        <li><a href="pages/training.html#datascience"
+                                class="hover:text-secondary transition-colors">Data Science</a></li>
+                        <li><a href="pages/training.html#microsoft"
+                                class="hover:text-secondary transition-colors">Microsoft Technologies</a></li>
+                        <li><a href="pages/training.html#cybersecurity"
+                                class="hover:text-secondary transition-colors">Cybersecurity</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2026 Infopath Solutions Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
